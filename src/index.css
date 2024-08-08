@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000319;
+}
+.columns {
+  @apply flex flex-col gap-4;
+}
+.rows {
+  @apply flex lg:flex-row flex-col gap-4;
+}
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.main-heading {
+  @apply font-bold text-white md:text-2xl text-xl;
+}
+.main-heading-gray {
+  @apply font-bold text-gray-500 md:text-2xl text-xl;
+}
+.w-h-screen {
+  @apply w-full min-h-screen;
+}
+.common-padding {
+  @apply md:p-12 xl:p-14 sm:p-8 p-3;
+}
+.gray-heading {
+  @apply font-bold md:text-2xl text-xl text-gray-600;
+}
+.sub-heading-gray {
+  @apply font-medium md:text-xl text-lg text-gray-200;
+}
+.inside-padding {
+  @apply lg:px-14 lg:py-7 md:px-8 md:py-4 px-6 py-3;
+}
+.glass-container {
+  @apply bg-gradient-to-br from-[#04071D] to-[#0C0E23] border-[#363749]/40 rounded-lg;
+}
+.color-button {
+  @apply flex flex-row gap-2 items-center rounded-md px-4 py-2 text-white/75 bg-black/50;
+}
+.control-btn {
+  @apply flex justify-center items-center rounded-md px-2 py-2 text-white/75 bg-black/50;
+}
+.gray-light {
+  @apply text-gray-500 font-light text-sm;
+}
